@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#C1DBE6"
+    android:background="@color/Grey"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@mipmap/ic_emergency"
+        android:drawablePadding="-30dp"
+        android:text="emergency"
+        android:textColor="#C30000"
+        android:textSize="28sp"
+        app:backgroundTint="#FFC5C5"
+        app:layout_constraintBottom_toTopOf="@+id/landing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@mipmap/ic_map"
+        android:drawablePadding="-70dp"
+        android:text="Map"
+        android:textColor="#020202"
+        android:textSize="28sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/bookmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/landing"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@mipmap/ic_landing"
+        android:text="Landing"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintEnd_toStartOf="@+id/takeoff"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/takeoff"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="10dp"
+        android:width="3dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@mipmap/ic_takeoff"
+        android:text="Take-Off"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/landing" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/round_button"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/use"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/use"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:drawableTop="@mipmap/ic_use"
+        android:text="이용내역"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bookmark"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:text="즐겨찾기"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        android:drawableTop="@mipmap/ic_bookmark"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/faq"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/use" />
+
+    <Button
+        android:id="@+id/faq"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:drawableTop="@mipmap/ic_faq"
+        android:text="FAQ"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="424dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/uam"
+        app:layout_constraintBottom_toTopOf="@+id/emergency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:srcCompat="@drawable/uam" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/baseline_account_box_24"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="348dp"-->
+<!--        android:layout_marginLeft="348dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:src="@drawable/baseline_account_box_24"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VTL_Helper"
+            android:layout_gravity="center"
+            android:textColor="#201F1F"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="8dp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
