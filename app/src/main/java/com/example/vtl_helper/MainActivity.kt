@@ -67,37 +67,43 @@ class MainActivity : AppCompatActivity() {
     fun settingButtons() {
         val button_emer = findViewById<Button>(R.id.emergency)
         button_emer.setOnClickListener {
-            val intent = Intent(this, Emergency::class.java) //(this,Emergency 그리고 Enter)
+            val intent = Intent(this, Emergency::class.java)
             startActivity(intent)
         }
 
         val button_use = findViewById<Button>(R.id.use)
         button_use.setOnClickListener {
-            val intent = Intent(this, Use::class.java) //(this,Emergency 그리고 Enter)
+            val intent = Intent(this, Use::class.java)
+            startActivity(intent)
+        }
+
+        val button_map = findViewById<Button>(R.id.map)
+        button_map.setOnClickListener {
+            val intent = Intent(this, Map::class.java)
             startActivity(intent)
         }
 
         val button_takeoff = findViewById<Button>(R.id.takeoff)
         button_takeoff.setOnClickListener {
-            val intent = Intent(this, TakeOff::class.java) //(this,Emergency 그리고 Enter)
+            val intent = Intent(this, TakeOff::class.java)
             startActivity(intent)
         }
 
         val button_landing = findViewById<Button>(R.id.landing)
         button_landing.setOnClickListener {
-            val intent = Intent(this, landing::class.java) //(this,Emergency 그리고 Enter)
+            val intent = Intent(this, landing::class.java)
             startActivity(intent)
         }
 
         val button_bookmark = findViewById<Button>(R.id.bookmark)
         button_bookmark.setOnClickListener {
-            val intent = Intent(this, bookmark::class.java) //(this,Emergency 그리고 Enter)
+            val intent = Intent(this, bookmark::class.java)
             startActivity(intent)
         }
 
         val button_faq = findViewById<Button>(R.id.faq)
         button_faq.setOnClickListener {
-            val intent = Intent(this, FAQ::class.java) //(this,Emergency 그리고 Enter)
+            val intent = Intent(this, FAQ::class.java)
             startActivity(intent)
         }
     }
